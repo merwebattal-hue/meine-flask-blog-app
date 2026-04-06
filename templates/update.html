@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Beitrag bearbeiten</title>
+</head>
+<body>
+    <h1>Beitrag bearbeiten</h1>
+
+    <form method="POST">
+        <label for="author">Autor:</label><br>
+        <input type="text" id="author" name="author" value="{{ post.author }}" required><br>
+
+        <label for="title">Titel:</label><br>
+        <input type="text" id="title" name="title" value="{{ post.title }}" required><br>
+
+        <label for="content">Inhalt:</label><br>
+        <textarea id="content" name="content" rows="5" required>{{ post.content }}</textarea><br>
+
+        <button type="submit" class="btn">Änderungen speichern</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('index') }}">Abbrechen</a>
+</body>
+</html>

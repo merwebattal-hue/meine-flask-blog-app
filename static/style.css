@@ -1,0 +1,92 @@
+/* --- Allgemeines Seitenlayout --- */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Design der Blog-Beiträge (Karten-Stil) */
+article {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* Button-Design (für die Klasse .btn) */
+.btn {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+/* Formular-Design (für add.html) */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Design für Textfelder und Textareas */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Padding beeinflusst nicht die Gesamtbreite */
+}
+
+/* --- Zusätzliche Button-Styles --- */
+.btn-delete {
+    background-color: #dc3545; /* Rot für Löschen */
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.header-actions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-update {
+    background-color: #007bff; /* Blau für Bearbeiten */
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.btn-update:hover {
+    background-color: #0056b3;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
