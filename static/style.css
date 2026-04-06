@@ -92,3 +92,23 @@ input[type="text"], textarea {
     text-align: center;
     margin-bottom: 30px;
 }
+
+/* --- Like-Button Design --- */
+.btn-like {
+    background-color: #ffc107; /* Gelb für Likes */
+    color: #333 !important; /* Dunkler Text für Kontrast */
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btn-like:hover {
+    background-color: #e0a800;
+}
+
+/* Post-Actions Container für bessere Abstände */
+.post-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}

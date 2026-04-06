@@ -19,11 +19,17 @@
                 <p><em>Von: {{ post.author }}</em></p>
                 <p>{{ post.content }}</p>
 
-                <a href="{{ url_for('update', post_id=post.id) }}" class="btn btn-update">Bearbeiten</a>
+                <div class="post-actions">
+                    <a href="{{ url_for('like', post_id=post.id) }}" class="btn btn-like">
+                        👍 Like ({{ post.likes if post.likes else 0 }})
+                    </a>
 
-                <a href="{{ url_for('delete', post_id=post.id) }}"
-                   class="btn btn-delete"
-                   onclick="return confirm('Wirklich löschen?')">Löschen</a>
+                    <a href="{{ url_for('update', post_id=post.id) }}" class="btn btn-update">Bearbeiten</a>
+
+                    <a href="{{ url_for('delete', post_id=post.id) }}"
+                       class="btn btn-delete"
+                       onclick="return confirm('Wirklich löschen?')">Löschen</a>
+                </div>
             </article>
         {% endfor %}
     </div>

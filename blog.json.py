@@ -3,12 +3,14 @@
         "id": 1,
         "author": "Merve",
         "title": "Mein erster Post",
-        "content": "Willkommen in meinem Flask-Blog!"
+        "content": "Willkommen in meinem Flask-Blog!",
+        "likes": 5
     },
     {
         "id": 2,
         "author": "John Doe",
         "title": "Flask Lernen",
-        "content": "Heute lerne ich, wie man JSON-Dateien verwendet."
+        "content": "Heute lerne ich, wie man JSON-Dateien verwendet.",
+        "likes": 0
     }
 ]
