@@ -23,9 +23,7 @@
 
                 <a href="{{ url_for('delete', post_id=post.id) }}"
                    class="btn btn-delete"
-                   onclick="return confirm('Möchtest du diesen Beitrag wirklich löschen?')">
-                   Löschen
-                </a>
+                   onclick="return confirm('Wirklich löschen?')">Löschen</a>
             </article>
         {% endfor %}
     </div>

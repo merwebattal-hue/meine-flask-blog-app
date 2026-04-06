@@ -30,23 +30,27 @@ article h2 {
 /* Button-Design (für die Klasse .btn) */
 .btn {
     display: inline-block;
-    background: #28a745;
+    background: #28a745; /* Standardmäßig Grün für "Add" */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 20px;
+    transition: background 0.3s;
 }
 
 .btn:hover {
     background: #218838;
 }
 
-/* Formular-Design (für add.html) */
+/* Formular-Design (für add.html und update.html) */
 form {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
 }
 
 /* Design für Textfelder und Textareas */
@@ -56,12 +60,14 @@ input[type="text"], textarea {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Padding beeinflusst nicht die Gesamtbreite */
+    box-sizing: border-box; /* Padding beeinflusst nicht die Breite */
 }
 
 /* --- Zusätzliche Button-Styles --- */
+
+/* Löschen-Button (Rot) */
 .btn-delete {
-    background-color: #dc3545; /* Rot für Löschen */
+    background-color: #dc3545;
     font-size: 0.8em;
     margin-top: 10px;
 }
@@ -70,13 +76,9 @@ input[type="text"], textarea {
     background-color: #c82333;
 }
 
-.header-actions {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
+/* Bearbeiten-Button (Blau) */
 .btn-update {
-    background-color: #007bff; /* Blau für Bearbeiten */
+    background-color: #007bff;
     font-size: 0.8em;
     margin-right: 5px;
 }
@@ -85,8 +87,8 @@ input[type="text"], textarea {
     background-color: #0056b3;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
+/* Zentrierung für den "Hinzufügen" Button auf der Startseite */
+.header-actions {
+    text-align: center;
+    margin-bottom: 30px;
 }
